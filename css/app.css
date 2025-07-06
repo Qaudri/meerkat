@@ -17,9 +17,20 @@
 .header #site-header-inner {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 100%;
 }
+
+@media (min-width: 992px) {
+  #site-header-inner {
+    justify-content: space-between;
+  }
+  #site-header-inner .header__logo {
+    margin-right: 0;
+  }
+  #site-header-inner .main-nav {
+    margin-left: 0;
+  }
+}
+
 .header #site-header-inner .tf-button {
   margin-left: auto;
 }
