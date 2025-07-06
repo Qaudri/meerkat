@@ -1109,7 +1109,7 @@
   z-index: 1;
 }
 .roadmap::before {
-  height: 55%;
+  height: 50%;
   width: 6px;
   /* background: #14c2a3; */
   background: #565660;
