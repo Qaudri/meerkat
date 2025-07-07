@@ -793,5 +793,25 @@
     <script>
       AOS.init();
     </script>
+
+    <style>
+      @media (max-width: 767px) {
+        .roadmap {
+          display: flex;
+          flex-direction: column;
+        }
+        .roadmap .box {
+          display: contents;
+        }
+        .roadmap .rm-box {
+          order: unset;
+        }
+        /* Assign order to each phase for correct stacking */
+        .roadmap .box-left .rm-box:nth-child(1) { order: 1; } /* Phase 1 */
+        .roadmap .box-right .rm-box:nth-child(1) { order: 2; } /* Phase 2 */
+        .roadmap .box-left .rm-box:nth-child(2) { order: 3; } /* Phase 3 */
+        .roadmap .box-right .rm-box:nth-child(2) { order: 4; } /* Phase 4 */
+      }
+    </style>
   </body>
 </html>
